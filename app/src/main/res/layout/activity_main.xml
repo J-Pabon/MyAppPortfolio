@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#CFD8DC">
+
+    <TextView android:text="@string/main_title" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        android:id="@+id/tvTitle"
+        android:textColor="#37474F" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:measureWithLargestChild="false">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/streamer"
+            android:id="@+id/btnStreamer"
+            android:background="#8BC34A"
+            android:textSize="16sp"
+            android:singleLine="false"
+            android:onClick="openStream"
+            android:textColor="#37474F" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scores"
+            android:id="@+id/btnScores"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:background="#8BC34A"
+            android:onClick="openScores"
+            android:textColor="#37474F" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/library"
+            android:id="@+id/btnLibrary"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:background="#8BC34A"
+            android:onClick="openLibrary"
+            android:textColor="#37474F" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bigger"
+            android:id="@+id/btnBigger"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:background="#8BC34A"
+            android:onClick="openBigger"
+            android:textColor="#37474F" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reader"
+            android:id="@+id/btnReader"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:background="#8BC34A"
+            android:onClick="openReader"
+            android:textColor="#37474F" />
+
+        <Button
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:text="@string/own"
+            android:id="@+id/btnOwn"
+            android:layout_marginTop="10dp"
+            android:background="#01579B"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:onClick="openOwn" />
+    </LinearLayout>
+
+</RelativeLayout>
