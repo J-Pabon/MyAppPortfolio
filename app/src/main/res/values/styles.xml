@@ -5,4 +5,22 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="button_main" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:layout_width">@dimen/width_button_main</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@color/background_buton_main</item>
+        <item name="android:textSize">@dimen/size_font_button_main</item>
+        <item name="android:textColor">@color/text_button_main</item>
+    </style>
+
+    <style name="button_own" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:layout_width">@dimen/width_button_main</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@color/background_button_own</item>
+        <item name="android:textSize">@dimen/size_font_button_main</item>
+        <item name="android:textColor">@color/text_button_own</item>
+    </style>
+
 </resources>

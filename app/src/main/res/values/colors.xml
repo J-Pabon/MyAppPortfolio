@@ -1,0 +1,8 @@
+<resources>
+    <color name="background_app">#CFD8DC</color>
+    <color name="text_title">#37474F</color>
+    <color name="background_buton_main">#8BC34A</color>
+    <color name="background_button_own">#01579B</color>
+    <color name="text_button_main">#37474F</color>
+    <color name="text_button_own">#FFFFFF</color>
+</resources>

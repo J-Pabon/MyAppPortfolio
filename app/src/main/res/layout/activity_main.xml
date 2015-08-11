@@ -4,16 +4,16 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
-    android:background="#CFD8DC">
+    android:background="@color/background_app">
 
     <TextView android:text="@string/main_title" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="25sp"
+        android:textSize="@dimen/size_font_title_main"
         android:textStyle="normal"
         android:id="@+id/tvTitle"
-        android:textColor="#37474F" />
+        android:textColor="@color/text_title" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -24,70 +24,41 @@
         android:measureWithLargestChild="false">
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/streamer"
+            style="@style/button_main"
             android:id="@+id/btnStreamer"
-            android:background="#8BC34A"
-            android:textSize="16sp"
-            android:singleLine="false"
-            android:onClick="openStream"
-            android:textColor="#37474F" />
+            android:layout_marginTop="0dp"
+            android:text="@string/streamer"
+            android:onClick="openApp" />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/scores"
+            style="@style/button_main"
             android:id="@+id/btnScores"
-            android:layout_marginTop="10dp"
-            android:textSize="16sp"
-            android:background="#8BC34A"
-            android:onClick="openScores"
-            android:textColor="#37474F" />
+            android:text="@string/scores"
+            android:onClick="openApp" />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/library"
+            style="@style/button_main"
             android:id="@+id/btnLibrary"
-            android:layout_marginTop="10dp"
-            android:textSize="16sp"
-            android:background="#8BC34A"
-            android:onClick="openLibrary"
-            android:textColor="#37474F" />
+            android:text="@string/library"
+            android:onClick="openApp" />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/bigger"
+            style="@style/button_main"
             android:id="@+id/btnBigger"
-            android:layout_marginTop="10dp"
-            android:textSize="16sp"
-            android:background="#8BC34A"
-            android:onClick="openBigger"
-            android:textColor="#37474F" />
+            android:text="@string/bigger"
+            android:onClick="openApp" />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/reader"
+            style="@style/button_main"
             android:id="@+id/btnReader"
-            android:textSize="16sp"
-            android:layout_marginTop="10dp"
-            android:background="#8BC34A"
-            android:onClick="openReader"
-            android:textColor="#37474F" />
+            android:text="@string/reader"
+            android:onClick="openApp" />
 
         <Button
-            android:layout_width="219dp"
-            android:layout_height="wrap_content"
-            android:text="@string/own"
+            style="@style/button_own"
             android:id="@+id/btnOwn"
-            android:layout_marginTop="10dp"
-            android:background="#01579B"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:onClick="openOwn" />
+            android:text="@string/own"
+            android:onClick="openApp" />
     </LinearLayout>
 
 </RelativeLayout>

@@ -17,40 +17,36 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void openApp(View view) {
+        CharSequence text = "";
 
-    public void openStream(View view) {
+        switch  (view.getId()) {
+            case R.id.btnStreamer:
+                text = "This button will launch the Spotify Streamer App";
+                break;
 
-        CharSequence text = "This button will launch the Spotify Streamer App";
-        Toast.makeText(this.getApplicationContext(), text, Toast.LENGTH_SHORT).show();
-    }
+            case R.id.btnScores:
+                text = "This button will launch the Scores App";
+                break;
 
-    public void openScores(View view) {
+            case R.id.btnLibrary:
+                text = "This button will launch the Library App";
+                break;
 
-        CharSequence text = "This button will launch the Scores App";
-        Toast.makeText(this.getApplicationContext(), text, Toast.LENGTH_SHORT).show();
-    }
+            case R.id.btnBigger:
+                text = "This button will launch the Built It Bigger App";
+                break;
 
-    public void openLibrary(View view) {
+            case R.id.btnReader:
+                text = "This button will launch the XYZ Reader App";
+                break;
 
-        CharSequence text = "This button will launch the Library App";
-        Toast.makeText(this.getApplicationContext(), text, Toast.LENGTH_SHORT).show();
-    }
+            case R.id.btnOwn:
+                text = "This button will launch the Capstone: My Own App";
+                break;
+        }
 
-    public void openBigger(View view) {
 
-        CharSequence text = "This button will launch the Built It Bigger App";
-        Toast.makeText(this.getApplicationContext(), text, Toast.LENGTH_SHORT).show();
-    }
-
-    public void openReader(View view) {
-
-        CharSequence text = "This button will launch the XYZ Reader App";
-        Toast.makeText(this.getApplicationContext(), text, Toast.LENGTH_SHORT).show();
-    }
-
-    public void openOwn(View view) {
-
-        CharSequence text = "This button will launch the Capstone: My Own App";
         Toast.makeText(this.getApplicationContext(), text, Toast.LENGTH_SHORT).show();
     }
 

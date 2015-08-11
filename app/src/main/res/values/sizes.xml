@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="size_font_title_main">25sp</dimen>
+    <dimen name="width_button_main">220dp</dimen>
+    <dimen name="size_font_button_main">16sp</dimen>
+</resources>
